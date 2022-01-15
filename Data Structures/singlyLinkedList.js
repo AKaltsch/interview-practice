@@ -139,4 +139,4 @@ list.push("there")
 list.push("buddy")
 
 
-console.log(list.pop())
+console.log(list)
