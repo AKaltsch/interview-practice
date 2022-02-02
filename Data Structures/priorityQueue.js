@@ -16,14 +16,10 @@ class PriorityQueue {
     }
     bubbleUp() {
         let idx = this.values.length - 1;
-        // console.log(idx)
         const element = this.values[idx];
-        // console.log(element)
         while(idx > 0) {
             let parentIdx = Math.floor((idx - 1)/2)
-            // console.log(parentIdx)
             let parent = this.values[parentIdx];
-            // console.log(parent)
             if (element.priority >= parent.priority) break;     
             this.values[parentIdx] = element;
             this.values[idx] = parent;
