@@ -75,7 +75,7 @@ class SinglyLinkedList{
         }
         return current;
     }
-    set(index, value) {
+    set(index, val) {
         let foundNode = this.get(index)
         if (foundNode) {
             foundNode.val = val;
@@ -140,3 +140,5 @@ list.push("buddy")
 
 
 console.log(list)
+
+console.log(list.get(1))
