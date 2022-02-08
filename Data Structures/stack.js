@@ -16,7 +16,7 @@ class Stack {
         let newNode = new Node(value);
         if (this.size === 0){
             this.first = newNode;
-            this.lase = newNode;
+            this.last = newNode;
         } else {
             let temp = this.first;
             this.first = newNode;
@@ -42,3 +42,5 @@ let stack = new Stack()
 stack.push(777)
 stack.push(5)
 stack.pop()
+
+console.log(stack)

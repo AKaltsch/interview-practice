@@ -138,6 +138,25 @@ class BinarySearchTree{
         traverse(current);
         return data;
     }
+
+    findSecondLargest() {
+        let current = this.root
+        if (current === null) return undefined;
+        let first = current.value
+        let second = null;
+        
+        
+        function traverse(node) {
+            if (node.left) traverse(node.left);
+            if (node.value > first) {
+                second = first;
+                first = node.value;
+            }
+            if (node.right) traverse(node.right)
+        }
+        traverse(current)
+        return second;
+      }
 }
 
 let tree = new BinarySearchTree();
